@@ -15,14 +15,14 @@ const StyledSidebar = styled.div`
         color: white;
     }
     & a.active {
-        color: gold;
+       
     }
 `
 
 const Sidebar = (props) => {
     return (
         <StyledSidebar>
-            <SidebarItem path='/Main'>Main</SidebarItem>
+            <SidebarItem path='/'>Main</SidebarItem>
             <SidebarItem path='/Categories'>Categories</SidebarItem>
             <SidebarItem path='/Currency'>Сurrency</SidebarItem>
             <SidebarItem path='/Settings'>Settings</SidebarItem>

@@ -1,22 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Button from '../components/UI/Button/Button'
 import styled from 'styled-components'
 import FormField from '../components/FormField/FormField'
-import axios from 'axios'
+import { NavLink, Redirect, useHistory } from 'react-router-dom'
 
 const StyledLoginPage = styled.div`
     background: url("./loginBg.webp");
     background-size: cover;
     height: 100vh;
 `
-
 const StyledWrapper = styled.div`
     max-width: 1366px;
     width: 100%;
     margin: 0 auto;
     padding: 2% 30px 0 30px;
 `
-
 const StyledLogin = styled.div`
     border-radius: 20px;
     padding-left: 55px;
@@ -51,92 +49,124 @@ const StyledLogin = styled.div`
 `
 const StyledTitle = styled.h1`
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #333;
     line-height: 1.2;
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 
-`
-const ForgotWrapper = styled.section`
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-`
-
-const StyledForgot = styled.div`
-    font-family: Poppins-Regular;
-    font-size: 1.4rem;
-    line-height: 1.7;
-    color: #666;
-    text-decoration: none;
 `
 const SignLinkWrapper = styled.section`
-    padding-top: 12%;
+    padding-top: 10%;
     text-align: center;
-`
-const SignUpLink = styled.a`
-    text-decoration: none;
-    font-family: Poppins-Regular;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: #333;
-    text-transform: uppercase;
-`
-
-function SubmitForm(e) {   
-    let name = document.getElementById('name').value
-    let surname = document.getElementById('surname').value
-    let login = document.getElementById('login').value
-    let password = document.getElementById('password').value
-    let id = Math.trunc(Date.now() + Math.random()*100)
-
-    e.preventDefault();
-
-    if (name && surname && login && password) {
-        axios.get(`http://localhost:3004/users?login=${login}`).then(x => {
-            if (x.data.length !== 0) {
-                alert('User already registered')
-            } else {
-                axios.post('http://localhost:3004/users', {
-                    name, 
-                    surname, 
-                    login, 
-                    password, 
-                    id,
-            }).then(x => {
-                alert('Registration success')
-                setTimeout( () => window.location.href = '/login', 1500)
-            })
-            }
-        })
-    } else {
-        alert('заполните все поля')
+    & a {
+        text-decoration: none;
+        font-family: Poppins-Regular;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: #333;
+        text-transform: uppercase;
     }
-}
-
-
-const Register = () => {
+`
+const Register = (props) => { 
     return (
         <StyledLoginPage>
             <StyledWrapper>
                 <StyledLogin>
                     <StyledTitle>Registration</StyledTitle>
-                    <form>
-                        <FormField name="name" type="text" placeholder="Your name">Name</FormField>
-                        <FormField name="surname" type="text" placeholder="Your surname">Surname</FormField>
-                        <FormField name="login" type="text" placeholder="Your login">Login</FormField>
-                        <FormField name="password" type="text" placeholder="Your password">Password</FormField>
-                        <Button onclick={SubmitForm}>Sign up</Button>
-                    </form>
+                    <FormField 
+                        type="text"
+                        name="name"
+                        onChange={props.handleChange}
+                        onBlur={props.handleBlur}
+                        value={props.values.name}
+                        placeholder="Your name"
+                        error={props.errors.name}
+                        touched={props.touched.name}
+                        >Name
+                    </FormField>   
+                    <FormField 
+                        type="text"
+                        name="surname"
+                        onChange={props.handleChange}
+                        onBlur={props.handleBlur}
+                        value={props.values.surname}
+                        placeholder="Your surname"
+                        error={props.errors.surname}
+                        touched={props.touched.surname}
+                        >Surname
+                    </FormField> 
+                    <FormField 
+                        type="text"
+                        name="login"
+                        onChange={props.handleChange}
+                        onBlur={props.handleBlur}
+                        value={props.values.login}
+                        placeholder="Login"
+                        error={props.errors.login}
+                        touched={props.touched.login}
+                        >Login
+                    </FormField> 
+                    <FormField 
+                        type="password"
+                        name="password"
+                        onChange={props.handleChange}
+                        onBlur={props.handleBlur}
+                        value={props.values.password}
+                        placeholder="Your password"
+                        error={props.errors.password}
+                        touched={props.touched.password}
+                        >Password
+                    </FormField> 
+                    <FormField 
+                        type="password"
+                        name="confirmPassword"
+                        onChange={props.handleChange}
+                        onBlur={props.handleBlur}
+                        value={props.values.confirmPassword}
+                        placeholder="Confirm password"
+                        touched='touched'
+                        error={props.errors.confirmPassword}
+                        touched={props.touched.confirmPassword}
+                        >Confirm password
+                    </FormField>
+                    <FormField 
+                        type="text"
+                        name="email"
+                        onChange={props.handleChange}
+                        onBlur={props.handleBlur}
+                        value={props.values.email}
+                        placeholder="Email"
+                        error={props.errors.email}
+                        touched={props.touched.email}
+                        >Email
+                    </FormField> 
+                    <FormField 
+                        type="text"
+                        name="confirmEmail"
+                        onChange={props.handleChange}
+                        onBlur={props.handleBlur}
+                        value={props.values.confirmEmail}
+                        placeholder="Confirm email"
+                        error={props.errors.confirmEmail}
+                        touched={props.touched.confirmEmail}
+                        >Confirm Email
+                    </FormField> 
+                    <Button
+                        disabled={!props.isValid || (Object.keys(props.touched).length === 0 && props.touched.constructor === Object)}
+                        onClick={props.handleSubmit}
+                        type='submit'
+                    >Register</Button>    
                     <SignLinkWrapper>
-                        <SignUpLink href="#" title="Sign-up">Sign up</SignUpLink>
-                    </SignLinkWrapper>
+                        <NavLink to='/login'>
+                            Login
+                        </NavLink>
+                    </SignLinkWrapper>                   
                 </StyledLogin>
             </StyledWrapper>
-        </StyledLoginPage>
-    )
-}
+        </StyledLoginPage>     
+    ) 
+}  
 
 export default Register
 

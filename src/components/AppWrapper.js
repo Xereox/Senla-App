@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const styledAppWrapper = styled.div `
+const StyledAppWrapper = styled.div`
 font-size: 16px;
 width: 100%;
 height: 100vh;
@@ -19,9 +19,7 @@ grid-template-columns: 180px 1fr;
 
 const AppWrapper = (props) => {
     return (
-        <styledAppWrapper>
-            
-        </styledAppWrapper>
+        <StyledAppWrapper>{props.children}</StyledAppWrapper>
     )
 }
 

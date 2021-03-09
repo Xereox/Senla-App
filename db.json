@@ -1,4 +1,20 @@
 {
   "users": [
+    {
+      "name": "xereox",
+      "surname": "xereox",
+      "id": "xereox",
+      "login": "xereox",
+      "password": "xereox",
+      "email": "xereox@gmail.com"
+    },
+    {
+      "name": "dsadasdas",
+      "surname": "asdasdas",
+      "id": "asdasdas",
+      "login": "asdasdas",
+      "password": "asdasdas",
+      "email": "asdasdas@gmail.com"
+    }
   ]
 }

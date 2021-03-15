@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Formik } from 'formik'
 import * as yup from 'yup'
 import { NavLink, Redirect, useHistory } from 'react-router-dom'
-import { SubmitRegisterForm } from "../lib/Axios";
+import { formGetData, formSetData } from "../lib/Axios";
 import Register from "./Register";
 
 const validationsSchemaRegister = yup.object().shape({
@@ -23,22 +23,51 @@ const initialValuesRegister = {
     email: '',
     confirmEmail: ''
 }
-const onSubmitRegister = (values) => {
-    values.id=values.login
-    SubmitRegisterForm(values)
+
+
+const onSubmitRegister = (values, history, setWarning) => {
+    setWarning('')
+    formGetData(values)
+        .then( resolve => {
+            if (resolve.length !== 0) {
+                setWarning('This user is already registered')
+            } else {
+                formSetData({
+                    name: values.name,
+                    surname: values.surname,
+                    id: values.login,
+                    login: values.login,
+                    password: values.password,
+                    email: values.email
+                })
+                .then(resolve => {
+                    setWarning('Registration success')
+                    setTimeout( () => {
+                        history.push('/login')
+                        setWarning('')
+                    }, 2000)
+                    
+                })
+            }
+        }).catch( x => {
+            setWarning('Connection error. Please, try again')
+        })
 }
 
 const RegisterContainer = () => { 
+    const history = useHistory();
+    const [warning, setWarning] = useState('')
     return (
         <div>
             <Formik 
                 initialValues={initialValuesRegister}
                 validateOnBlur //валидация при переходе на след поле
-                onSubmit={onSubmitRegister} // вызов во время отправки формы
+                onSubmit={ (values) => onSubmitRegister(values, history, setWarning) } // вызов во время отправки формы
                 validationSchema={validationsSchemaRegister}
             >
                 { ({ values, errors, touched, handleChange, handleBlur, isValid, handleSubmit}) => (
                     <Register
+                        warning={warning}
                         values={values}
                         errors={errors}
                         touched={touched}

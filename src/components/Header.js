@@ -1,7 +1,7 @@
 import React from 'react'
+import { useHistory } from 'react-router'
 import styled from 'styled-components'
 import LogoutFromPage from '../lib/LogoutFromPage'
-import Login from '../pages/Login'
 
 const StyledHeader = styled.div`
     grid-area: head;
@@ -21,11 +21,12 @@ const LoginInfo = styled.div`
 `
 
 const Header = (props) => {
+    const history = useHistory();
     return (
         <StyledHeader>
             <HeaderTitle>{props.children}</HeaderTitle>
             <LoginInfo>
-                <button onClick={LogoutFromPage}>Logout</button>
+                <button onClick={ () => LogoutFromPage(history) }>Logout</button>
             </LoginInfo>
         </StyledHeader>
     )

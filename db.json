@@ -1,20 +1,52 @@
 {
   "users": [
     {
-      "name": "xereox",
-      "surname": "xereox",
+      "name": "Sergey",
+      "surname": "Smiatanin",
       "id": "xereox",
       "login": "xereox",
-      "password": "xereox",
-      "email": "xereox@gmail.com"
+      "password": "434343",
+      "email": "w0w3d3thegame@gmail.com"
     },
     {
-      "name": "dsadasdas",
-      "surname": "asdasdas",
-      "id": "asdasdas",
-      "login": "asdasdas",
-      "password": "asdasdas",
-      "email": "asdasdas@gmail.com"
+      "name": "xereoxx",
+      "surname": "xereoxx",
+      "id": "xereoxx",
+      "login": "xereoxx",
+      "password": "434343",
+      "email": "xereoxx@gmail.com"
+    },
+    {
+      "name": "hhhhhh@gmai.com",
+      "surname": "hhhhhh@gmai.com",
+      "id": "hhhhhh@gmai.com",
+      "login": "hhhhhh@gmai.com",
+      "password": "hhhhhh@gmai.com",
+      "email": "hhhhhh@gmai.com"
+    },
+    {
+      "name": "xereox",
+      "surname": "xereox",
+      "id": "xereoxxereox",
+      "login": "xereoxxereox",
+      "password": "xereox",
+      "email": "xereoxyamusic@gmail.com"
+    },
+    {
+      "name": "jjjj@gmail.com",
+      "surname": "jjjj@gmail.com",
+      "id": "jjjj@gmail.com",
+      "login": "jjjj@gmail.com",
+      "password": "jjjj@gmail.com",
+      "email": "jjjj@gmail.com"
+    },
+    {
+      "name": "jjjj@gmail.com",
+      "surname": "jjjj@gmail.com",
+      "id": "jjjsj@gmail.com",
+      "login": "jjjsj@gmail.com",
+      "password": "jjjj@gmail.com",
+      "email": "jjjj@gmail.com"
     }
   ]
 }

@@ -1,6 +1,6 @@
-const LogoutFromPage = () =>{   
+const LogoutFromPage = (history) =>{   
    localStorage.removeItem('IsLogin')
-   setTimeout( () => window.location.href = '/login', 500)
+   history.push('/login')
 }
 
 export default LogoutFromPage

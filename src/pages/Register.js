@@ -68,11 +68,18 @@ const SignLinkWrapper = styled.section`
         text-transform: uppercase;
     }
 `
+const Warning = styled.div`
+  color: ${props => props.children === 'Registration success' ? 'lightgreen' : 'red'} ;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+`
 const Register = (props) => { 
     return (
         <StyledLoginPage>
             <StyledWrapper>
                 <StyledLogin>
+                    <Warning>{props.warning}</Warning>
                     <StyledTitle>Registration</StyledTitle>
                     <FormField 
                         type="text"
@@ -97,6 +104,7 @@ const Register = (props) => {
                         >Surname
                     </FormField> 
                     <FormField 
+                        serverErrors={props.serverErrors}
                         type="text"
                         name="login"
                         onChange={props.handleChange}

@@ -80,12 +80,21 @@ const SignLinkWrapper = styled.section`
         text-transform: uppercase;
     }
 `
+const Warning = styled.div`
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+`
+
+
 const Login = (props) => { 
     return (
         <StyledLoginPage>
             <StyledWrapper>
                 <StyledLogin>
-                    <StyledTitle>Log in</StyledTitle>
+                    <Warning>{props.warning}</Warning>
+                    <StyledTitle>Login</StyledTitle>
                     <FormField 
                         type="text"
                         name="login"

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Formik } from 'formik'
 import * as yup from 'yup'
 import { NavLink, Redirect, useHistory } from 'react-router-dom'
-import { SubmitLoginForm } from "../lib/Axios";
+import { formGetData } from "../lib/Axios";
 import isAuth from '../lib/isAuth'
 import Login from "./Login";
 
@@ -14,21 +14,41 @@ const initialValuesLogin = {
     password: '',
     login: '',
 }               
-const onSubmitLogin = (values) => SubmitLoginForm(values)
+const onSubmitLogin = (values, history, setWarning) => {
+    setWarning('')
+    formGetData(values)
+    .then( resolve => {
+        if (resolve.length !== 0) {
+            if (values.password === resolve[0].password) {
+                localStorage.setItem('IsLogin', true);
+                history.push('/')
+            } else {
+                setWarning('Wrong password')
+            }
+      } else {
+        setWarning('User does not exist')
+      }
+    }).catch( x => { 
+        setWarning('Connection error. Please, try again')
+    })
+   
+}
 
-
-const LoginContainer = () => { 
+const LoginContainer = (props) => { 
+    const history = useHistory();
+    const [warning, setWarning] = useState('')
     if (isAuth()) return <Redirect to={'/'}/>
     return (
         <div>
             <Formik 
                 initialValues={initialValuesLogin}
                 validateOnBlur //валидация при переходе на след поле
-                onSubmit={onSubmitLogin} // вызов во время отправки формы
+                onSubmit={ (values) => onSubmitLogin(values, history, setWarning)} // вызов во время отправки формы
                 validationSchema={validationsSchemaLogin}
             >
                 { ({ values, errors, touched, handleChange, handleBlur, isValid, handleSubmit}) => (
                     <Login 
+                        warning={warning}
                         values={values}
                         errors={errors}
                         touched={touched}

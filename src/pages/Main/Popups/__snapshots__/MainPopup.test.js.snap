@@ -1,0 +1,384 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popup should be like previous snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="sc-bkbkJK fnuupP"
+        >
+          <button
+            class="sc-iemWCZ ebNruz"
+          >
+            X
+          </button>
+          <div>
+            <input
+              class="sc-ksluID cSSpoY"
+              type="text"
+              value="1"
+            />
+             
+            BR
+          </div>
+          <div
+            class="sc-jSFjdj oYTEP"
+          >
+            <div
+              class="sc-gKAaRy edzNoS"
+            >
+              Счет
+            </div>
+          </div>
+          <label
+            class="sc-dIvrsQ ktHHsF"
+          >
+            Не задан
+          </label>
+          <div
+            class="sc-bqGGPW jKnPDx"
+          >
+            <div
+              class="sc-kEqXSa inkYeI"
+            >
+              <span
+                class="sc-crzoAE iOPuxU"
+              >
+                Спорт
+              </span>
+              <div
+                class="sc-iqAclL jiVmhW"
+                color="#F13C20"
+                data-test-id="img"
+              />
+              <div
+                class="sc-dIsUp kVyDxL"
+              />
+            </div>
+            <div
+              class="sc-kEqXSa inkYeI"
+            >
+              <span
+                class="sc-crzoAE iOPuxU"
+              >
+                Транспорт
+              </span>
+              <div
+                class="sc-iqAclL bTSSr"
+                color="#659DBD"
+                data-test-id="img"
+              />
+              <div
+                class="sc-dIsUp kVyDxL"
+              />
+            </div>
+            <div
+              class="sc-kEqXSa inkYeI"
+            >
+              <span
+                class="sc-crzoAE iOPuxU"
+              >
+                Семья
+              </span>
+              <div
+                class="sc-iqAclL idqmgX"
+                color="#C38D9E"
+                data-test-id="img"
+              />
+              <div
+                class="sc-dIsUp kVyDxL"
+              />
+            </div>
+          </div>
+          <div
+            class="sc-fFSPTT bbRVXL"
+          >
+            <input
+              type="date"
+              value="2021-07-15"
+            />
+          </div>
+          <div
+            class="sc-fnVZcZ hgwRNq"
+          >
+            Комментарий
+            <div>
+              <input
+                class="sc-hBMUJo jokiav"
+                placeholder="Комментарий"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="sc-dlMDgC laVUlp"
+          >
+            <button
+              class="ant-btn ant-btn-text ant-btn-round ant-btn-dangerous"
+              type="button"
+            >
+              <span
+                aria-label="delete"
+                class="anticon anticon-delete"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="delete"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"
+                  />
+                </svg>
+              </span>
+              <span>
+                УДАЛИТЬ
+              </span>
+            </button>
+          </div>
+          <div
+            class="sc-hHEiqL bvvfVj"
+          >
+            <button
+              class="ant-btn ant-btn-primary ant-btn-round ant-btn-block"
+              type="button"
+            >
+              <span>
+                Сохранить
+              </span>
+            </button>
+          </div>
+          <span
+            class="sc-kfYoZR UzCHe"
+          >
+            <div>
+              1. Счёт не выбран
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="sc-bkbkJK fnuupP"
+      >
+        <button
+          class="sc-iemWCZ ebNruz"
+        >
+          X
+        </button>
+        <div>
+          <input
+            class="sc-ksluID cSSpoY"
+            type="text"
+            value="1"
+          />
+           
+          BR
+        </div>
+        <div
+          class="sc-jSFjdj oYTEP"
+        >
+          <div
+            class="sc-gKAaRy edzNoS"
+          >
+            Счет
+          </div>
+        </div>
+        <label
+          class="sc-dIvrsQ ktHHsF"
+        >
+          Не задан
+        </label>
+        <div
+          class="sc-bqGGPW jKnPDx"
+        >
+          <div
+            class="sc-kEqXSa inkYeI"
+          >
+            <span
+              class="sc-crzoAE iOPuxU"
+            >
+              Спорт
+            </span>
+            <div
+              class="sc-iqAclL jiVmhW"
+              color="#F13C20"
+              data-test-id="img"
+            />
+            <div
+              class="sc-dIsUp kVyDxL"
+            />
+          </div>
+          <div
+            class="sc-kEqXSa inkYeI"
+          >
+            <span
+              class="sc-crzoAE iOPuxU"
+            >
+              Транспорт
+            </span>
+            <div
+              class="sc-iqAclL bTSSr"
+              color="#659DBD"
+              data-test-id="img"
+            />
+            <div
+              class="sc-dIsUp kVyDxL"
+            />
+          </div>
+          <div
+            class="sc-kEqXSa inkYeI"
+          >
+            <span
+              class="sc-crzoAE iOPuxU"
+            >
+              Семья
+            </span>
+            <div
+              class="sc-iqAclL idqmgX"
+              color="#C38D9E"
+              data-test-id="img"
+            />
+            <div
+              class="sc-dIsUp kVyDxL"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-fFSPTT bbRVXL"
+        >
+          <input
+            type="date"
+            value="2021-07-15"
+          />
+        </div>
+        <div
+          class="sc-fnVZcZ hgwRNq"
+        >
+          Комментарий
+          <div>
+            <input
+              class="sc-hBMUJo jokiav"
+              placeholder="Комментарий"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="sc-dlMDgC laVUlp"
+        >
+          <button
+            class="ant-btn ant-btn-text ant-btn-round ant-btn-dangerous"
+            type="button"
+          >
+            <span
+              aria-label="delete"
+              class="anticon anticon-delete"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="delete"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"
+                />
+              </svg>
+            </span>
+            <span>
+              УДАЛИТЬ
+            </span>
+          </button>
+        </div>
+        <div
+          class="sc-hHEiqL bvvfVj"
+        >
+          <button
+            class="ant-btn ant-btn-primary ant-btn-round ant-btn-block"
+            type="button"
+          >
+            <span>
+              Сохранить
+            </span>
+          </button>
+        </div>
+        <span
+          class="sc-kfYoZR UzCHe"
+        >
+          <div>
+            1. Счёт не выбран
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

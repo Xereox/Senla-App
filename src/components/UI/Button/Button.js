@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import Register from '../../../pages/Register';
+import React from 'react'
 import './Button.css'
 
 const Button = (props) => {

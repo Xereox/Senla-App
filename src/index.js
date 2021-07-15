@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import styled, {createGlobalStyle} from 'styled-components'
+import {createGlobalStyle} from 'styled-components'
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './Redux/store';
 
-
+window.store = store
 
 const Global = createGlobalStyle`
   * {
@@ -13,14 +16,17 @@ const Global = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: SourceSansPro-Regular, sans-serif;
-    font-size: 10px;
   }
 `
 
 ReactDOM.render(
   <>
-    <Global />
-    <App />
+    <BrowserRouter>
+        <Global />
+        <Provider store={store}>
+          <App />
+        </Provider>   
+    </BrowserRouter>
   </>,
   document.getElementById('root')
 );

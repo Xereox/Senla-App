@@ -11,42 +11,424 @@
     {
       "name": "xereoxx",
       "surname": "xereoxx",
-      "id": "xereoxx",
-      "login": "xereoxx",
+      "id": "xereoxxxx",
+      "login": "xereoxxxx",
+      "password": "xereoxxx",
+      "email": "xereoxxx@gmail.com"
+    },
+    {
+      "name": "ravery",
+      "surname": "ravery",
+      "id": "ravery",
+      "login": "ravery",
       "password": "434343",
-      "email": "xereoxx@gmail.com"
+      "email": "w0w3d3thegame@gmail.com"
+    }
+  ],
+  "categorycosts": [
+    {
+      "img": "/static/media/1.83e37710.svg",
+      "title": "Спорт",
+      "color": "#F13C20",
+      "id": 1
     },
     {
-      "name": "hhhhhh@gmai.com",
-      "surname": "hhhhhh@gmai.com",
-      "id": "hhhhhh@gmai.com",
-      "login": "hhhhhh@gmai.com",
-      "password": "hhhhhh@gmai.com",
-      "email": "hhhhhh@gmai.com"
+      "img": "/static/media/3.5b0bbc98.svg",
+      "title": "Транспорт",
+      "color": "#659DBD",
+      "id": 2
     },
     {
-      "name": "xereox",
-      "surname": "xereox",
-      "id": "xereoxxereox",
-      "login": "xereoxxereox",
-      "password": "xereox",
-      "email": "xereoxyamusic@gmail.com"
+      "img": "/static/media/3.5b0bbc98.svg",
+      "title": "Семья",
+      "color": "#C38D9E",
+      "id": 3
     },
     {
-      "name": "jjjj@gmail.com",
-      "surname": "jjjj@gmail.com",
-      "id": "jjjj@gmail.com",
-      "login": "jjjj@gmail.com",
-      "password": "jjjj@gmail.com",
-      "email": "jjjj@gmail.com"
+      "img": "/static/media/4.1a5c5423.svg",
+      "title": "Продукты",
+      "color": "#8EE4AF",
+      "id": 6
     },
     {
-      "name": "jjjj@gmail.com",
-      "surname": "jjjj@gmail.com",
-      "id": "jjjsj@gmail.com",
-      "login": "jjjsj@gmail.com",
-      "password": "jjjj@gmail.com",
-      "email": "jjjj@gmail.com"
+      "img": "/static/media/5.b3b9cb54.svg",
+      "title": "Образование",
+      "color": "#C38D9E",
+      "id": 7
+    },
+    {
+      "img": "/static/media/6.c8add466.svg",
+      "title": "Подарки",
+      "color": "#EDF5E1",
+      "id": 8
+    },
+    {
+      "img": "/static/media/7.6d38f9c0.svg",
+      "title": "Кафе",
+      "color": "#242582",
+      "id": 9
+    },
+    {
+      "img": "/static/media/8.38227495.svg",
+      "title": "Дом",
+      "color": "#8D8741",
+      "id": 10
+    },
+    {
+      "img": "/static/media/9.c596b5e7.svg",
+      "title": "Досуг",
+      "color": "#f500ed",
+      "id": 11
+    },
+    {
+      "img": "/static/media/10.7e148e80.svg",
+      "title": "Здоровье",
+      "color": "#E8A87C",
+      "id": 12
+    },
+    {
+      "img": "/static/media/11.a36c8d9f.svg",
+      "title": "Другое",
+      "color": "#99783E",
+      "id": 13
+    },
+    {
+      "img": "/static/media/2.e1945bfc.svg",
+      "title": "Запчасти",
+      "color": "#41B3A3",
+      "id": 14
+    }
+  ],
+  "categoryincome": [
+    {
+      "img": "/static/media/12.75c4abdc.svg",
+      "title": "Проценты",
+      "color": "#EE4C7C",
+      "id": 1
+    },
+    {
+      "img": "/static/media/6.c8add466.svg",
+      "title": "Подарок",
+      "color": "#8EE4AF",
+      "id": 2
+    },
+    {
+      "img": "/static/media/13.fedfc881.svg",
+      "title": "Зарплата",
+      "color": "#00ff08",
+      "id": 3
+    },
+    {
+      "img": "/static/media/11.a36c8d9f.svg",
+      "title": "Другое",
+      "color": "#00e6bf",
+      "id": 4
+    }
+  ],
+  "cards": [
+    {
+      "cards": [
+        {
+          "img": "/static/media/20.bf44b717.png",
+          "title": "Приорбанк",
+          "deposit": 315,
+          "color": "blue",
+          "active": "false",
+          "id": "0"
+        },
+        {
+          "img": "/static/media/5.ebe546fc.png",
+          "title": "Альфа-банк",
+          "deposit": 57,
+          "color": "yellow",
+          "active": "false",
+          "id": "1"
+        },
+        {
+          "img": "/static/media/21.ff97f125.png",
+          "title": "Наличка",
+          "deposit": 429,
+          "color": "#e09bff",
+          "active": "false",
+          "id": "2"
+        }
+      ],
+      "id": "0"
+    }
+  ],
+  "currency": [
+    {
+      "currency": [
+        {
+          "title": "Доллар США",
+          "symbol": "USD",
+          "active": "false",
+          "id": "0"
+        },
+        {
+          "title": "Белорусский рубль",
+          "symbol": "BYN",
+          "active": "true",
+          "id": "1"
+        },
+        {
+          "title": "Российский рубль",
+          "symbol": "RUB",
+          "active": "false",
+          "id": "2"
+        },
+        {
+          "title": "Евро",
+          "symbol": "EUR",
+          "active": "false",
+          "id": "3"
+        },
+        {
+          "title": "Казахстанский тенге",
+          "symbol": "KZT",
+          "active": "false",
+          "id": "4"
+        },
+        {
+          "title": "Киргизкий сом",
+          "symbol": "KGS",
+          "active": "false",
+          "id": "5"
+        }
+      ],
+      "id": "0"
+    }
+  ],
+  "maincosts": [
+    {
+      "IDcategory": 3,
+      "spending": 44,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-03-17",
+      "id": 1
+    },
+    {
+      "IDcategory": 3,
+      "spending": 32,
+      "commentary": "",
+      "IDcard": "0",
+      "date": "2021-04-27",
+      "id": 4
+    },
+    {
+      "IDcategory": 1,
+      "spending": 131,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-01",
+      "id": 5
+    },
+    {
+      "IDcategory": 2,
+      "spending": 533,
+      "commentary": "",
+      "IDcard": "2",
+      "date": "2021-05-01",
+      "id": 6
+    },
+    {
+      "IDcategory": 6,
+      "spending": 134,
+      "commentary": "",
+      "IDcard": "2",
+      "date": "2021-05-01",
+      "id": 7
+    },
+    {
+      "IDcategory": 7,
+      "spending": 120,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-01",
+      "id": 8
+    },
+    {
+      "IDcategory": 10,
+      "spending": 332,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-01",
+      "id": 11
+    },
+    {
+      "IDcategory": 11,
+      "spending": 311,
+      "commentary": "ff",
+      "IDcard": "1",
+      "date": "2021-05-01",
+      "id": 12
+    },
+    {
+      "IDcategory": 13,
+      "spending": 50,
+      "commentary": "31",
+      "IDcard": "1",
+      "date": "2021-05-01",
+      "id": 14
+    },
+    {
+      "IDcategory": 7,
+      "spending": 3,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-07",
+      "id": 15
+    },
+    {
+      "IDcategory": 12,
+      "spending": 5,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-08",
+      "id": 16
+    },
+    {
+      "IDcategory": 6,
+      "spending": 10,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-08",
+      "id": 18
+    },
+    {
+      "IDcategory": 6,
+      "spending": 100,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-08",
+      "id": 19
+    },
+    {
+      "IDcategory": 3,
+      "spending": 7,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-09",
+      "id": 20
+    },
+    {
+      "IDcategory": 3,
+      "spending": 150,
+      "commentary": "",
+      "IDcard": "0",
+      "date": "2021-05-09",
+      "id": 21
+    },
+    {
+      "IDcategory": 6,
+      "spending": 41,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-11",
+      "id": 22
+    },
+    {
+      "IDcategory": 6,
+      "spending": 33,
+      "commentary": "",
+      "IDcard": "2",
+      "date": "2021-05-11",
+      "id": 23
+    },
+    {
+      "IDcategory": 3,
+      "spending": 33,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-11",
+      "id": 24
+    },
+    {
+      "IDcategory": 3,
+      "spending": 3,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-12",
+      "id": 25
+    },
+    {
+      "IDcategory": 6,
+      "spending": 3,
+      "commentary": "ntc",
+      "IDcard": "1",
+      "date": "2021-05-16",
+      "id": 26
+    },
+    {
+      "IDcategory": 6,
+      "spending": 1,
+      "commentary": "",
+      "IDcard": "0",
+      "date": "2021-05-16",
+      "id": 27
+    },
+    {
+      "IDcategory": 14,
+      "spending": 54,
+      "commentary": "",
+      "IDcard": "0",
+      "date": "2021-06-20",
+      "id": 28
+    },
+    {
+      "IDcategory": 14,
+      "spending": 33,
+      "commentary": "",
+      "IDcard": "0",
+      "date": "2021-06-20",
+      "id": 29
+    }
+  ],
+  "mainincome": [
+    {
+      "IDcategory": 3,
+      "spending": 155,
+      "commentary": "",
+      "IDcard": "1",
+      "date": "2021-05-08",
+      "id": 1
+    }
+  ],
+  "period": [
+    {
+      "title": "Год",
+      "date": [
+        "2020-07-09",
+        "2021-07-09"
+      ],
+      "id": 1
+    }
+  ],
+  "test": [
+    {
+      "1618951887777": "",
+      "id": 1
+    },
+    {
+      "1618951889680": "",
+      "id": 2
+    },
+    {
+      "1618951891099": "",
+      "id": 3
+    },
+    {
+      "1618951951358": "",
+      "id": 4
+    },
+    {
+      "1618951952931": "",
+      "id": 5
+    },
+    {
+      "1618951954451": "",
+      "id": 6
     }
   ]
 }

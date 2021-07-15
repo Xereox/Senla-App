@@ -1,16 +1,40 @@
 import React from 'react'
 import styled from 'styled-components'
+import 'antd/dist/antd.css';
+import { Layout } from 'antd';
+import { connect } from 'react-redux';
 
 const StyledFooter = styled.div`
     grid-area: footer;  
-    background-color: green;
 `
+const {Footer} = Layout;
 
-
-const Footer = (props) => {
+const PageFooter = ({theme}) => {
+    const footerStyle = {
+        textAlign: 'center', 
+        height: '40px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: (theme === 'light') ? '' : '#322f3d',
+        color: theme === 'light' ? '' : '#EFEBE9'
+    }
+    
     return (
-        <StyledFooter>{props.children}</StyledFooter>
+    <StyledFooter>
+        <Layout>
+            <Footer style={footerStyle}>Finances calculator — 2021</Footer>
+        </Layout>
+      </StyledFooter>
     )
 }
 
-export default Footer
+const mapStateToProps = (state) => {
+    return {
+        theme: state.settings.theme
+    }
+}
+export default connect(mapStateToProps)(PageFooter)
+
+
+

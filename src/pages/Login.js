@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Button from '../components/UI/Button/Button'
 import styled from 'styled-components'
 import FormField from '../components/FormField/FormField'
-import { NavLink, Redirect, useHistory } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const StyledLoginPage = styled.div`
     background: url("./loginBg.webp");

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Formik } from 'formik'
 import * as yup from 'yup'
-import { NavLink, Redirect, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { formGetData, formSetData } from "../lib/Axios";
 import Register from "./Register";
 
